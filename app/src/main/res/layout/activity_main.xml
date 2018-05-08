@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="chencheng.bwie.com.lianxi20180508.view.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ff6600">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="登录界面"
+        android:textColor="#ffffff"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/leftjiantou" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp">
+<EditText
+    android:id="@+id/phone"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:layout_margin="20dp"
+    android:hint="请输入账号"
+   />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/phone"
+        android:layout_below="@+id/phone"
+
+        android:layout_margin="20dp"
+        android:hint="请输入密码" />
+    <TextView
+        android:id="@+id/register"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd"
+        android:layout_alignParentRight="true"
+        android:text="注册账号"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#ff6600"
+        android:text="登录"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+
+</LinearLayout>
